@@ -13,7 +13,7 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write ./**/*.ts",
     "typecheck": "tsc --noEmit",
-    "test": "dotenvx run -f .env.test -- vitest",
+    "test": "dotenvx run -- vitest",
     "test:ui": "pnpm test -- --coverage --ui",
     "coverage": "pnpm test -- run --coverage"
   },
@@ -27,7 +27,6 @@
     "eslint-plugin-perfectionist": "^2.11.0",
     "eslint-plugin-unicorn": "^54.0.0",
     "eslint-plugin-unused-imports": "^3.2.0",
-    "husky": "^9.0.11",
     "prettier": "^3.3.2",
     "tsc-alias": "^1.8.10",
     "tsx": "^4.15.7",
